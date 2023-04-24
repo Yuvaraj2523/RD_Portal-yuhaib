@@ -25,6 +25,14 @@ export class PatentDashboardComponent implements OnInit,OnChanges {
 
   public barChartOptions: any = {
     responsive: true,
+    scales:{
+      xAxes: [{
+        stacked:true,
+      }],
+      yAxes: [{
+        stacked:true,
+      }]
+    }
   };
   public barChartColors = [
     { backgroundColor: RD_CONSTANT.chartColors.bgreen},
